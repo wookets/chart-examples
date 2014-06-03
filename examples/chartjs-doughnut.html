@@ -1,0 +1,38 @@
+<html>
+<head>
+  <script src="../bower_components/chartjs/Chart.js" type="text/javascript"></script>
+</head>
+<body>
+<canvas id="myChart" width="600" height="400"></canvas>
+
+<script type="text/javascript">
+  var data = [
+    {
+      value: 30,
+      color:"#F7464A"
+    },
+    {
+      value : 50,
+      color : "#E2EAE9"
+    },
+    {
+      value : 100,
+      color : "#D4CCC5"
+    },
+    {
+      value : 40,
+      color : "#949FB1"
+    },
+    {
+      value : 120,
+      color : "#4D5360"
+    }
+
+  ]
+  //Get the context of the canvas element we want to select
+  var ctx = document.getElementById("myChart").getContext("2d");
+  var myNewChart = new Chart(ctx).Doughnut(data);
+</script>
+
+</body>
+</html>
